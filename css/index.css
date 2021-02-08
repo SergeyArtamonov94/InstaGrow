@@ -66,12 +66,10 @@ body {
     line-height: 1;
     overflow-wrap: break-word;
     padding-top: 220px;
-
     
     max-width: 600px;
     margin:  0px 0px 0px 82.5px;
-    width: 100%;
-    
+    width: 100%;    
 }
 
 .intro h2 {
@@ -125,12 +123,29 @@ body {
 
 /* about */
 .about {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 120px 0px 60px 0px;
-    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+    padding: 120px 0 60px 0;
 }
+@media (min-width: 60px) {
+    .about {
+        display: grid;
+        grid-template-columns: 1fr;  
+    }
+}
+@media (min-width: 760px) {
+    .about {
+        display: grid;
+        grid-template-columns: 1fr 1fr;  
+    }
+}
+@media (min-width: 960px) {
+    .about {
+        grid-template-columns: 1fr 1fr 1fr;  
+    }
+}
+
 .about h3 {
     color: rgb(118, 72, 248);
     font-size: 24px;
