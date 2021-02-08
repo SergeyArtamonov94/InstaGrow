@@ -1,5 +1,3 @@
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@900&display=swap" rel="stylesheet">
 
 /* logo */
 body {
@@ -53,7 +51,7 @@ body {
 .intro {
     width: 100%;
     height: 100vh;
-    background: url("/css/img/introback.png") center no-repeat;
+    background: url("/img/introback.png") center no-repeat; 
     background-size: cover;    
     margin: 30px -15px 0px -15px;
 }
