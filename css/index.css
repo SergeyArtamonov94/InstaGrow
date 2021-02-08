@@ -1,4 +1,10 @@
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@900&display=swap" rel="stylesheet">
 
+/* logo */
+body {
+    margin: 0px;
+}
 /* logo */
 
 .logo {
@@ -20,17 +26,16 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 30px;
+    padding-bottom: 30px;
     margin-left: 82.5px;
     margin-right: 82.5px;
 }
 /* nav */
 .nav {
     font-size: 12px;
-    text-transform: uppercase;
-    
+    text-transform: uppercase;  
 }
 .link_nav {
-    
     display: inline-block;
     vertical-align: top;
     margin: 0 10px;
@@ -45,17 +50,166 @@
 }
 
 /* intro */
+.intro {
+    width: 100%;
+    height: 100vh;
+    background: url(/img/intro_back.jpg) center no-repeat;
+    background-size: cover;
+    
+    margin: 30px -15px 0px -15px;
+}
+
 
 .intro_title {
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
     font-size: 50px;
     font-weight: 700;
-    text-transform: uppercase;
     text-align: left;
     line-height: 1;
-    
+    overflow-wrap: break-word;
+    padding-top: 220px;
 
+    
+    max-width: 600px;
+    margin:  0px 0px 0px 82.5px;
     width: 100%;
+    
+}
+
+.intro h2 {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    overflow-wrap: break-word;
     max-width: 600px;
     margin-left: 82.5px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.buttons {
+    margin-left: 82.5px;
+    display: inline-block; 
+}
+
+.buttons_pricing {
+    background-color: white;
+    border-color:  rgb(251, 168, 127);
+    border-style: solid;
+    border-radius: 5px;
+    height: 55px;
+    width: 145px;
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 30px;    
+}
+.buttons_pricing:hover {
+    background-color: rgb(251, 168, 127);
+    cursor: pointer;
+}
+
+.buttons_how {
+    background-image: none; 
+    background: transparent;
+    border-color:  rgb(251, 168, 127);
+    color: white;
+    border-style: solid;
+    border-radius: 5px;
+    height: 55px;
+    width: 145px;
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 30px;
+}
+.buttons_how:hover {
+    background-color: rgb(251, 168, 127);
+    cursor: pointer;
+}
+
+/* about */
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 120px 0px 60px 0px;
     
+}
+.about h3 {
+    color: rgb(118, 72, 248);
+    font-size: 24px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.about p {
+    font-size: 16px;
+    text-align: center;
+    color: rgb(95, 97, 98);
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+}
+.about img {
+    height: 70px;
+}
+
+
+.about_consultion {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-top: 30px;
+}
+
+
+.about_targeting {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-top: 30px;
+}
+
+.about_result {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-top: 30px;
+}
+
+/* how_it_works */
+.how_it_title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.how_it_title h3 {
+    font-size: 12px;
+    color: rgb(95, 97, 98);
+    font-weight: 500;
+    font-stretch: 100%;
+}
+.how_it_title h2 {
+    font-size: 48px;
+    color: rgb(29, 31, 42);
+    font-weight: 900;
+    font-stretch: 100%;
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0 0 0 0;
+}
+.how_it_title p {
+   font-family: 'Rubik', sans-serif;
+   font-size: 18px;
+   font-weight: 400;
+   color: rgb(95, 97, 98);
+   margin: 0 0 0 0;
+   
 }
