@@ -10,12 +10,12 @@
     
 }
 
-/* 
+
 body {
     max-width: 980px;
     margin: auto;
 } 
-*/
+
 
 /* Header */
 /* Header logo */
@@ -79,6 +79,7 @@ header .nav a:hover {
     padding: 30px 40px 30px 40px;
     }
     
+    
     header nav {
         display: flex;
     }
@@ -92,8 +93,7 @@ header .nav a:hover {
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
-        flex: 0.6;
-        
+        flex: 0.4;    
     }
 }
 
@@ -114,10 +114,13 @@ header .nav a:hover {
 @media (min-width: 610px) {
     .intro {
         padding: 220px 0 220px 0;
+        
     }
     .intro_title {
         width: 550px;
+        
     }
+    
 }
 
 .intro_title {
@@ -268,6 +271,8 @@ header .nav a:hover {
    font-size: 18px;
    font-weight: 400;
    color: rgb(95, 97, 98);
-   margin: 0 0 0 0;
-   
+   margin: 0 0 0 0;  
 }
+
+/* How_it_position */
+
