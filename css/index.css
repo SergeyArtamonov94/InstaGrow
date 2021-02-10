@@ -1,15 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700;900&family=Rubik:wght@400;500&display=swap');
 
 /* font-family: 'Nunito Sans', sans-serif; */
 /* font-family: 'Rubik', sans-serif; */
 :root {
     --buttons_color: rgb(251, 168, 127);
+    --intro_color: rgb(255, 255, 255);
+    --about_title_color: rgb(118, 72, 248);
+    --about_title_p_color: rgb(95, 97, 98);
+    
 }
 
+/* 
 body {
     max-width: 980px;
     margin: auto;
-}
+} 
+*/
 
 /* Header */
 /* Header logo */
@@ -25,14 +31,13 @@ body {
 }
 
 #burger-checkbox {
-    display: none;
-   
+    display: none; 
 }
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 101px;
+    height: 50px;
     padding: 30px 24px 30px 24px;
 }
 header .nav {
@@ -54,15 +59,26 @@ header .img_nav {
 header .nav a {
     font-size: 12px;
     text-decoration: none;
-    text-transform: uppercase;
-    
+    color: rgb(29, 31, 42);
+    font-weight: 400;
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;    
     padding: 3px;
     transition: color 0.2s linear;
+    white-space: nowrap;
 }
 header .nav a:hover {
     color: violet;
 }
 @media (min-width: 610px) {
+    .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 30px 40px 30px 40px;
+    }
+    
     header nav {
         display: flex;
     }
@@ -76,7 +92,8 @@ header .nav a:hover {
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
-        flex: 0.8;
+        flex: 0.6;
+        
     }
 }
 
@@ -91,30 +108,49 @@ header .nav a:hover {
     min-width: 250px;
     font-weight: 400;
     padding: 110px 0 110px 0;
-    margin: 0 0 0 0;    
+    margin: 0 0 0 0; 
+     
+}
+@media (min-width: 610px) {
+    .intro {
+        padding: 220px 0 220px 0;
+    }
+    .intro_title {
+        width: 550px;
+    }
 }
 
 .intro_title {
-    color: white;
+    color: var(--intro_color);
+    font-family: 'Nunito Sans', sans-serif;
     font-size: 54px;
     font-weight: 900;
     overflow-wrap: break-word;
     max-width: 650px;
+    padding-left: 24px;
+    margin-block-start: 0; 
+    margin-block-end: 0;
 }
 .intro h2 {
-    color: white;
+    color: var(--intro_color);
     font-size: 18px;
     font-weight: 400;
     overflow-wrap: break-word;
-    max-width: 650px;    
+    max-width: 650px;
+    padding-left: 24px;
+    font-family: 'Rubik', sans-serif;    
 }
 .buttons {
     display: inline-block; 
+    padding-left: 24px;
+    margin-top: 35px;
 }
 
 .buttons_pricing {
-    background-color: white;
+    background-color: var(--intro_color);
     border-color: var(--buttons_color);
+    color: rgb(77, 81, 98);
+    font-family: 'Rubik', sans-serif;
     border-style: solid;
     border-radius: 5px;
     height: 55px;
@@ -124,7 +160,7 @@ header .nav a:hover {
     margin-right: 30px;    
 }
 .buttons_pricing:hover {
-    background-color: var(--buttons_color);
+    background-color: rgb(247, 179, 11);
     cursor: pointer;
 }
 
@@ -132,7 +168,8 @@ header .nav a:hover {
     background-image: none; 
     background: transparent;
     border-color: var(--buttons_color);
-    color: white;
+    color: var(--intro_color);
+    font-family: 'Rubik', sans-serif;
     border-style: solid;
     border-radius: 5px;
     height: 55px;
@@ -142,7 +179,7 @@ header .nav a:hover {
     margin-right: 30px;
 }
 .buttons_how:hover {
-    background-color: var(--buttons_color);
+    background-color: rgb(247, 179, 11);
     cursor: pointer;
 }
 
@@ -172,10 +209,16 @@ header .nav a:hover {
         grid-template-columns: 1fr 1fr 1fr;  
     }
 }
+.about h3 {
+    font-family: 'Nunito Sans', sans-serif;
+    color: var(--about_title_color);
+}
 .about p {
     display: block;
     overflow-wrap: break-word;
     text-align: center;
+    font-family: 'Rubik', sans-serif; 
+    color: var(--about_title_p_color);
 }
 
 .about_consultion {
@@ -195,4 +238,36 @@ header .nav a:hover {
     padding-right: 15px;
     padding-left: 15px;
     margin-top: 30px;
+}
+
+/* how_it_works */
+
+/* how_it_title */
+.how_it_title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.how_it_title h3 {
+    font-size: 12px;
+    font-family: 'Rubik', sans-serif;
+    color: var(--about_title_p_color);
+    font-weight: 500;
+    font-stretch: 100%;
+}
+.how_it_title h2 {
+    font-size: 48px;
+    color: rgb(29, 31, 42);
+    font-weight: 900;
+    font-stretch: 100%;
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0 0 0 0;
+}
+.how_it_title p {
+   font-family: 'Rubik', sans-serif;
+   font-size: 18px;
+   font-weight: 400;
+   color: rgb(95, 97, 98);
+   margin: 0 0 0 0;
+   
 }
