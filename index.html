@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header size">
         <a href="#home"><img class="logo" src="img/Logo.svg" alt="Logo"></a>
         <label class="burger-icon" for="burger-checkbox">☰</label>
         <input type="checkbox" id="burger-checkbox">
@@ -28,20 +28,22 @@
     </header>  
     <main>
         <div class="intro">
-            <h1 class="intro_title">Grow Your Instagram Right Today And Increase Engagement</h1>
-            <h2>Gain popularity and get more leads from Instagram.</h2>
-            <div class="buttons">
-                <form action="#pricing">
-                    <button class="buttons_pricing">Pricing</button>
-                </form>
-            </div>
-            <div class="buttons">
-                <form action="#how_it_works">
-                    <button class="buttons_how">How It Works</button>
-                </form>
+            <div class="size">
+                <h1 class="intro_title">Grow Your Instagram Right Today And Increase Engagement</h1>
+                <h2>Gain popularity and get more leads from Instagram.</h2>
+                <div class="buttons">
+                    <form action="#pricing">
+                        <button class="buttons_pricing">Pricing</button>
+                    </form>
+                </div>
+                <div class="buttons">
+                    <form action="#how_it_works">
+                        <button class="buttons_how">How It Works</button>
+                    </form>
+                </div>
             </div>
         </div>
-        <div class="about">
+        <div class="about size">
             <div class="about_consultion">
                 <img class="consultation" src="img/consultion.svg" alt="Consultation">
                 <h3>Consultation</h3>                
@@ -66,7 +68,7 @@
                 <p>products or services on Instagram</p>
             </div>
             <div class=how_it_position>
-                <img class=" how_it_img" src="img/how-it.png" alt="page how it works">
+                <img class="how_it_img" src="img/how-it.png" alt="page how it works">
                 <div class="how_it_text">
                     <div>
                         <ul class="text_how_it_work">
@@ -105,120 +107,135 @@
                 </div>
             </div>
         </div>
-        <div id="pricing">PRICING
-            <article>
-                <h3>EASY START</h3>
-                <p>$129/ per month</p>
-                <ul>
-                    <li>Likes on Photos</li>
-                    <li>Targeted Audience</li>
-                    <li>Consistent Engagement</li>
-                    <li>Email Support</li>
-                    <li>No Extras</li>
-                </ul>
-                <div class="buttons">
-                    <form action="#contacts">
-                        <button>Get Started</button>
-                    </form>
-                </div>
-            </article>
-            <article>
-                <h3>GROWTH</h3>
-                <p>$199/ per month</p>
-                <ul>
-                    <li>250+ Organic Followers/mo.</li>
-                    <li>Targeted Audience</li>
-                    <li>Email Support</li>
-                    <li>Hashtag Research</li>
-                    <li>Standard Reporting</li>
-                </ul>
-                <div class="buttons">
-                    <form action="#contacts">
-                        <button>Get Started</button>
-                    </form>
-                </div>
-            </article>
-            <article>
-                <h3>BLOGGER</h3>
-                <p>$299/ per month</p>
-                <ul>
-                    <li>500+ Organic Followers/mo.</li>
-                    <li>Targeted Audience</li>
-                    <li>Influencer Collab Research</li>
-                    <li>Priority Support</li>
-                    <li>Custom Reporting</li>
-                </ul>
-                <div class="buttons">
-                    <form action="#contacts">
-                        <button>Get Started</button>
-                    </form>
-                </div>
-            </article>
-        </div>
-        <div id="contacts">CONTACTS
-            <article>
-                <h3>Start My Growth</h3>
-                <p>Fill out the form below to learn how we can grow your Instagram account.</p>
-            </article>
-            <div>
-                <form>
-                    <label>
-                        <input type="text" name="name" placeholder="Instagram username" required>
-                    </label>
-                    <label>
-                        <input type="email" name="email" placeholder="Name" required>
-                    </label>
-                    <label>
-                        <input type="email" name="email" placeholder="Email" required>
-                    </label>
-                    <br>
-                    <input type="submit" value="Submit">
-                </form>
+        <div class="transition"></div>
+        <div id="pricing">
+            <div class="pricing_title size">
+                <h3>PRICING</h3>
+                <h2>Choose Your Pricing Plan</h2>
             </div>
+            <div class="price_all size">
+                <article class="pricing_article">
+                    <h3>EASY START</h3>
+                    <span>$129</span> 
+                    <span>/ per month</span> 
+                    <ul>
+                        <li>Likes on Photos</li>
+                        <li>Targeted Audience</li>
+                        <li>Consistent Engagement</li>
+                        <li>Email Support</li>
+                        <li>No Extras</li>
+                    </ul>
+                    <div class="buttons">
+                        <form action="#contacts">
+                            <button class="buttons_get_started">Get Started</button>
+                        </form>
+                    </div>
+                </article>
+                <article class="pricing_article">
+                    <h3>GROWTH</h3>
+                    <p>$199/ per month</p>
+                    <ul>
+                        <li>250+ Organic Followers/mo.</li>
+                        <li>Targeted Audience</li>
+                        <li>Email Support</li>
+                        <li>Hashtag Research</li>
+                        <li>Standard Reporting</li>
+                    </ul>
+                    <div class="buttons">
+                        <form action="#contacts">
+                            <button class="buttons_get_started">Get Started</button>
+                        </form>
+                    </div>
+                </article>
+                <article class="pricing_article">
+                    <h3>BLOGGER</h3>
+                    <p>$299/ per month</p>
+                    <ul>
+                        <li>500+ Organic Followers/mo.</li>
+                        <li>Targeted Audience</li>
+                        <li>Influencer Collab Research</li>
+                        <li>Priority Support</li>
+                        <li>Custom Reporting</li>
+                    </ul>
+                    <div class="buttons">
+                        <form action="#contacts">
+                            <button class="buttons_get_started">Get Started</button>
+                        </form>
+                    </div>
+                </article>
+            </div>            
         </div>
+        <div id="contacts">            
+            <div class="contacts_all size">
+                <div class="contacts_title">
+                    <h3>CONTACTS</h3>
+                    <article>
+                        <h2>Start My Growth</h2>
+                        <p>Fill out the form below to learn how we can grow your Instagram account.</p>                        </article>
+                </div>
+                <div class="form_contacts">
+                    <form>
+                        <label>
+                            <input type="text" name="name" placeholder="Instagram username" required>
+                        </label>
+                        <label>
+                            <input type="email" name="email" placeholder="Name" required>
+                        </label>
+                        <label>
+                            <input type="email" name="email" placeholder="Email" required>
+                        </label>
+                        <br>
+                            <input class="button_submit" type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>            
     </main>
     <footer>
-        <div>
-            <a href="#home"><img src="img/Logo.svg" alt="Logo"></a>
-            <p>We can help you engage your audience, generate leads, and promote your products or services on Instagram with the help of special techniques.</p>
-        </div>
-        <article>
-            <h2>Contacts</h2>
-            <p><a href="tel:+1(234)5678900">+1 (234) 567 89 00</a></p>
-            <p><a href="tel:+1(234)5678901">+1 (234) 567 89 01</a></p>
-            <p><a href="mailto:instagrow@email.com">instagrow@email.com</a></p>
-        </article>
-        <article>
-            <h2>Navigation</h2>
-            <ul>
-                <li><a href="#how_it_works">How it works</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#contacts">Contacts</a></li>
-            </ul>
-        </article>
-        <article>
-            <h2>Visit Us</h2>
-            <p>2 Broklyn St, NY
-                711-2880 Nulla St, NY
-                935-9940 Tortor. Street, NY</p>
-                <ul>
-                    <li>
+        <div class="footer size">
+            <div>
+                <div class="footer_home">
+                    <a href="#home"><img class="logo_footer" src="img/Logo.svg" alt="Logo"></a>
+                    <span>We can help you engage your audience, generate leads, and promote</span>
+                    <span>your products or services on Instagram with the help of special techniques.</span>
+                </div>
+            </div>
+            <div class="footer_contacts">
+                <article>
+                    <h2>Contacts</h2>
+                    <p><a href="tel:+1(234)5678900">+1 (234) 567 89 00</a></p>
+                    <p><a href="tel:+1(234)5678901">+1 (234) 567 89 01</a></p>
+                    <p><a href="mailto:instagrow@email.com">instagrow@email.com</a></p>
+                </article>
+            </div>
+            <div class="footer_navigation">
+                <article>
+                    <h2>Navigation</h2>
+                    <a href="#how_it_works">How it works</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#contacts">Contacts</a>
+                </article>
+            </div>
+            <div class="footer_visit">
+                <article>
+                    <h2>Visit Us</h2>
+                    <span>2 Broklyn St, NY</span>
+                    <span>711-2880 Nulla St, NY</span>
+                    <span>935-9940 Tortor. Street, NY</span>
+                    <div class="footer_visit_icon">
                         <a href="https://www.facebook.com">
-                            <img alt="facebook" src="img/facebook.svg">
+                            <img class="img_nav_footer" alt="facebook" src="img/facebook.svg">
                         </a>
-                    </li> 
-                    <li>
                         <a href="https://www.instagram.com">
-                            <img alt="instagram" src="img/instagram.svg">
+                            <img class="img_nav_footer" alt="instagram" src="img/instagram.svg">
                         </a> 
-                    </li>
-                    <li>
                         <a href="https://www.youtube.com">
-                            <img class="youtube" alt="youtube" src="img/youtube.svg">
+                            <img class="img_nav_footer" alt="youtube" src="img/youtube.svg">
                         </a>
-                    </li> 
-                </ul>
-        </article>
+                    </div>
+                </article>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

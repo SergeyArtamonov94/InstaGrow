@@ -11,8 +11,8 @@
 }
 
 
-body {
-    max-width: 980px;
+.size {
+    max-width: 1200px;
     margin: auto;
 } 
 
@@ -160,7 +160,7 @@ header .nav a:hover {
     width: 145px;
     font-size: 14px;
     font-weight: 700;
-    margin-right: 30px;    
+    margin-right: 15px;    
 }
 .buttons_pricing:hover {
     background-color: rgb(247, 179, 11);
@@ -176,7 +176,7 @@ header .nav a:hover {
     border-style: solid;
     border-radius: 5px;
     height: 55px;
-    width: 145px;
+    width: 162px;
     font-size: 14px;
     font-weight: 700;
     margin-right: 30px;
@@ -275,4 +275,324 @@ header .nav a:hover {
 }
 
 /* How_it_position */
+/* .how_it_position  {
+    display: block;
+    width: 100%;
+}
+.how_it_img {
+    max-width: 750px;
+    height: auto;
+}
 
+@media (min-width: 750px) {
+    .how_it_position {
+        display: flex;
+        width: 50%;
+    }
+} */
+
+
+/* transition */
+.transition {
+    
+    padding-top: 80px;
+    padding-bottom: 95px;
+    width: 100%;
+    background: url("../img/background_transition.png") center no-repeat; 
+    background-size: cover;
+}
+
+/* #pricing */
+#pricing {
+    width: 100%;
+    background: url("../img/background_pricing.png") center no-repeat; 
+    background-size: cover;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+@media (min-width: 960px) {
+    #pricing  {
+    padding-top: 110px;
+    padding-bottom: 120px;  
+    }
+}
+
+.pricing_title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.pricing_title h3 {
+    font-size: 12px;
+    font-family: 'Rubik', sans-serif;
+    color: var(--about_title_p_color);
+    font-weight: 500;
+    font-stretch: 100%;
+}
+.pricing_title h2 {
+    font-size: 34px;
+    color: rgb(29, 31, 42);
+    font-weight: 900;
+    font-stretch: 100%;
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0 0 0 0;
+}
+
+.price_all {
+    display: block;
+    box-sizing: border-box;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+    text-align: left;
+    
+    
+}
+@media (min-width: 60px) {
+    .price_all {
+        display: grid;
+        grid-template-columns: 1fr;  
+    }
+}
+@media (min-width: 760px) {
+    .price_all {
+        display: grid;
+        grid-template-columns: 1fr 1fr;  
+    }
+}
+@media (min-width: 960px) {
+    .price_all  {
+        grid-template-columns: 1fr 1fr 1fr;  
+    }
+}
+.pricing_article {
+    background-color: white;
+    margin: 50px 10px 0 10px;
+    padding-left: 20px;
+    
+}
+.pricing_article ul {
+    padding-left: 20px;
+}
+.pricing_article h3 {
+    font-size: 12px;
+    font-family: 'Rubik', sans-serif;
+    color: var(--about_title_p_color);
+    font-weight: 500;
+    font-stretch: 100%;
+}
+
+.pricing_article li {
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+    color: var(--about_title_p_color);
+    font-weight: 400;
+    font-stretch: 100%;
+}
+.pricing_article li::marker {
+    color: var(--about_title_color);
+}
+
+.buttons_get_started {
+    background-image: none; 
+    background: transparent;
+    border-color: var(--about_title_color);
+    color: rgb(77, 81, 98);
+    font-family: 'Rubik', sans-serif;
+    border-style: solid;
+    border-radius: 5px;
+    height: 55px;
+    width: 126px;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 30px;    
+}
+.buttons_get_started:hover {
+    background-color: var(--about_title_color);
+    cursor: pointer;
+}
+
+/* Contacts */
+#contacts {
+    width: 100%;
+    background: url("../img/#") center no-repeat; 
+    background-size: cover;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    display: block;
+}
+.contacts_all {
+    min-width: 250px;
+    border: solid yellow;
+    max-width: 570px;
+    height: 621px;
+    width: 570px;
+    
+
+     
+}
+@media (min-width: 700px) {
+    .contacts_all {
+        width: 100%; 
+        max-width: 570px;
+        height: 621px;
+    }
+}
+@media (min-width: 500px) {
+    .contacts_all {
+        width: 100%; 
+        max-width: 570px;
+        height: 621px;
+    }
+}
+
+
+
+.form_contacts label {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+    
+
+}
+.form_contacts input {
+    line-height: 15px;
+    text-align: start;
+ 
+}
+
+.button_submit {
+    display: flex;
+    text-align: center;
+    cursor: pointer;
+    
+}
+.contacts_title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.contacts_title h3 {
+    font-size: 12px;
+    font-family: 'Rubik', sans-serif;
+    color: var(--about_title_p_color);
+    font-weight: 500;
+    font-stretch: 100%;
+}
+.contacts_title h2 {
+    font-size: 34px;
+    color: rgb(29, 31, 42);
+    font-weight: 900;
+    font-stretch: 100%;
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0 0 0 0;
+    padding-left: 15px;
+}
+.contacts_title p {
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    font-family: 'Rubik', sans-serif; 
+    color: var(--about_title_p_color);
+    font-size: 18px;
+}
+
+/* Footer */
+
+.footer {
+    display: block;
+    box-sizing: border-box;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+    text-align: center;
+}
+
+@media (min-width: 50px) {
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr;  
+    }
+}
+
+@media (min-width: 800px) {
+    .footer  {
+        grid-template-columns: 1fr 1fr 1fr 1fr;  
+    }
+}
+.logo_footer {
+    height: auto;
+    width: 204px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.img_nav_footer {
+    height: 30px;
+    width: auto;
+}
+
+.footer_home span {
+    display: flex;
+    font-size: 14px;
+    font-family: 'Rubik', sans-serif;
+    color: var(--about_title_p_color);
+    font-weight: 400;
+    overflow-wrap: break-word;
+    text-align: center;
+    justify-content: center;
+    margin: 10px;
+}
+.footer h2 {
+    font-family: 'Nunito Sans', sans-serif;
+    color: var(--about_title_color);
+    font-size: 22px;
+}
+.footer_contacts  a {
+    font-size: 12px;
+    text-decoration: none;
+    color: rgb(29, 31, 42);
+    font-weight: 400;
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;    
+    padding: 3px;
+    transition: color 0.2s linear;
+    white-space: nowrap;
+}
+.footer_contacts  a:hover {
+    color: violet;
+}
+
+.footer_navigation  a {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    text-decoration: none;
+    color: rgb(29, 31, 42);
+    font-weight: 400;
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;    
+    padding: 3px;
+    transition: color 0.2s linear;
+    white-space: nowrap;
+}
+
+.footer_navigation a:hover {
+    color: rgb(118, 72, 248);
+}
+
+.footer_visit span {
+    display: flex;
+    font-size: 14px;
+    font-family: 'Rubik', sans-serif;
+    color: var(--about_title_p_color);
+    font-weight: 400;
+    overflow-wrap: break-word;
+    text-align: center;
+    justify-content: center;
+}
+.footer_visit a {
+    padding: 15px;
+}
+
+.footer_visit_icon {
+    margin: 15px;
+}
