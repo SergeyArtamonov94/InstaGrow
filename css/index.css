@@ -275,27 +275,6 @@ header .nav a:hover {
 }
 
 /* How_it_position */
-/* .how_it_position  {
-    display: block;
-    width: 100%;
-}
-.how_it_img {
-    max-width: 750px;
-    height: auto;
-}
-
-@media (min-width: 750px) {
-    .how_it_position {
-        display: flex;
-        width: auto;
-        top: 50%;
-    }
-    .how_it_img {
-        width: auto;
-        top: 50%;  
-    }
-} */
-
 
 /* How_it_position */
 
@@ -315,6 +294,35 @@ header .nav a:hover {
 .how_it_img {
         width: 100%!important;
     }
+
+.how_it_text ul {
+    list-style: none;
+    margin: 0
+}
+.how_it_text ul li {
+    position: relative;
+}
+.how_it_text ul li:before {
+    content:  "—";
+    font-weight: 700;
+    position: absolute;
+    left:     -25px;
+    color: var(--about_title_color);
+}
+.text_how_it_work h3 {
+    color: rgb(29, 31, 42);
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 19px; 
+    font-weight: 700;
+}
+
+.text_how_it_work p {
+    margin-left: -25px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(95, 97, 98);
+}
 
 /* transition */
 .transition {
@@ -366,7 +374,7 @@ header .nav a:hover {
     display: block;
     box-sizing: border-box;
     grid-template-columns: 1fr 1fr 1fr;
-    justify-content: space-around;
+    justify-content: center;
     text-align: left;
     
     
@@ -381,6 +389,7 @@ header .nav a:hover {
     .price_all {
         display: grid;
         grid-template-columns: 1fr 1fr;  
+        
     }
 }
 @media (min-width: 960px) {
@@ -438,7 +447,8 @@ header .nav a:hover {
 /* Contacts */
 #contacts {
     width: 100%;
-    background: url("../img/#") center no-repeat; 
+    background: url("../img/background_contacts.png") center no-repeat; 
+    background-attachment: fixed;
     background-size: cover;
     padding-top: 90px;
     padding-bottom: 90px;
@@ -446,19 +456,38 @@ header .nav a:hover {
 }
 .contacts_all {
     min-width: 250px;
-    border: solid yellow;
+    
     max-width: 570px;
     height: 621px;
-    width: 570px;
+    width: auto;
+    min-width: 300px;
+    background: rgba(255, 255, 255, 0.05);
     
 
-     
 }
+.form {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 400px;
+    padding: 35px;
+    justify-content: end;
+}
+.form input {
+    padding: 15px;
+    margin: 15px;
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 5px;
+    color: white;
+}
+
+
 @media (min-width: 700px) {
     .contacts_all {
         width: 100%; 
         max-width: 570px;
         height: 621px;
+       
     }
 }
 @media (min-width: 500px) {
@@ -466,6 +495,7 @@ header .nav a:hover {
         width: 100%; 
         max-width: 570px;
         height: 621px;
+        
     }
 }
 
@@ -482,7 +512,7 @@ header .nav a:hover {
 .form_contacts input {
     line-height: 15px;
     text-align: start;
- 
+    
 }
 
 .button_submit {
@@ -505,7 +535,7 @@ header .nav a:hover {
 }
 .contacts_title h2 {
     font-size: 34px;
-    color: rgb(29, 31, 42);
+    color: var(--intro_color);
     font-weight: 900;
     font-stretch: 100%;
     font-family: 'Nunito Sans', sans-serif;
@@ -517,7 +547,7 @@ header .nav a:hover {
     padding-right: 15px;
     text-align: center;
     font-family: 'Rubik', sans-serif; 
-    color: var(--about_title_p_color);
+    color: var( --intro_color);
     font-size: 18px;
 }
 
