@@ -287,10 +287,34 @@ header .nav a:hover {
 @media (min-width: 750px) {
     .how_it_position {
         display: flex;
-        width: 50%;
+        width: auto;
+        top: 50%;
+    }
+    .how_it_img {
+        width: auto;
+        top: 50%;  
     }
 } */
 
+
+/* How_it_position */
+
+.how_it_position {
+    grid-gap: 2vw;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+@media (min-width: 660px) {
+    .how_it_position {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-top: 30px;
+    }
+}
+.how_it_img {
+        width: 100%!important;
+    }
 
 /* transition */
 .transition {
