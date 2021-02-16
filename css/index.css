@@ -558,12 +558,20 @@ header .nav a:hover {
     display: flex;
     justify-content: center;
     cursor: pointer;
-    background: url("../img/color_button.jpg") center no-repeat; 
-    background-attachment: fixed;
-    background-size: cover;
     padding: 15px;
     margin: 30px 15px 15px 15px;
-    
+    color: white;
+    border-radius: 5px;
+    border-width: 0;
+    font-family: 'Rubik', sans-serif;
+    background-image: linear-gradient(to left, rgb(231,119,199) 0%, rgb(145,142,232) 51%, rgb(124,73,248) 100%);
+    background-image: transparent;
+    transition: 0.3s;
+
+}
+
+.form button:hover {
+   background-image: linear-gradient(to right, rgb(231,119,199) 0%, rgb(145,142,232) 51%, rgb(124,73,248) 100%);
 }
 
 
