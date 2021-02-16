@@ -10,6 +10,9 @@
     
 }
 
+body {
+    margin: 0;
+}
 
 .size {
     max-width: 1200px;
