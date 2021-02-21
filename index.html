@@ -165,34 +165,36 @@
                 </article>
             </div>            
         </div>
-        <div id="contacts">            
-            <div class="contacts_all size">
-                <div class="contacts_title">
-                    <h3>CONTACTS</h3>
-                    <article>
-                        <h2>Start My Growth</h2>
-                        <p>Fill out the form below to learn how we can grow your Instagram account.</p>                        </article>
-                </div>
-                <div class="form_contacts">
-                    <form class="form"> 
-                        <label>
-                            <input type="text" name="name" placeholder="Instagram username" required>
-                        </label>
-                        <label>
-                            <input type="email" name="email" placeholder="Name" required>
-                        </label>
-                        <label>
-                            <input type="email" name="email" placeholder="Email" required>
-                        </label>
-                        <br>
-                        <button type="submit">
-                            <span>Submit</span>
-                        </button>
-                            
-                    </form>
-                </div>
-            </div>
-        </div>            
+        <div id="contacts">
+      <div class="container size">
+        <form id="form" class="form">
+          <div class="contacts_title">
+            <h3>CONTACTS</h3>
+            <article>
+              <h2>Start My Growth</h2>
+                <p>Fill out the form below to learn how we can grow your Instagram account.</p>
+            </article>
+          </div>
+          <div class="form-control">
+            <label for="username"></label>
+            <input type="text" id="username" placeholder="Instagram username" />
+            <small>Error message</small>
+          </div>
+          <div class="form-control">
+            <label for="name"></label>
+            <input type="text" id="name" placeholder="Name" />
+            <small>Error message</small>
+          </div>
+          <div class="form-control">
+            <label for="email"></label>
+            <input type="text" id="email" placeholder="Email" />
+            <small>Error message</small>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+    <script src="js/index.js"></script>           
     </main>
     <footer>
         <div class="footer size">
