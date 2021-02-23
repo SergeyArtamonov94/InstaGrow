@@ -27,6 +27,11 @@ body {
     height: auto;
     width: 204px;
 }
+@media (max-width: 290px) {
+    .logo {
+        width: 100%!important;
+    }
+}
 
 /* Header Nav */
 .burger-icon {
@@ -108,7 +113,7 @@ header .nav a:hover {
     background-size: cover;    
     margin: 30px -15px 0px -15px;
     display: block;
-    min-width: 250px;
+    min-width: 130px;
     font-weight: 400;
     padding: 110px 0 110px 0;
     margin: 0 0 0 0; 
@@ -126,6 +131,7 @@ header .nav a:hover {
     
 }
 
+
 .intro_title {
     color: var(--intro_color);
     font-family: 'Nunito Sans', sans-serif;
@@ -134,8 +140,7 @@ header .nav a:hover {
     overflow-wrap: break-word;
     max-width: 650px;
     padding-left: 24px;
-    margin-block-start: 0; 
-    margin-block-end: 0;
+    
 }
 .intro h2 {
     color: var(--intro_color);
@@ -151,6 +156,8 @@ header .nav a:hover {
     padding-left: 24px;
     margin-top: 35px;
 }
+
+
 
 .buttons_pricing {
     background-color: var(--intro_color);
@@ -168,6 +175,12 @@ header .nav a:hover {
 .buttons_pricing:hover {
     background-color: rgb(247, 179, 11);
     cursor: pointer;
+}
+@media (max-width: 290px) {
+    .buttons_pricing {
+        margin: auto;
+        width: 100%!important;
+    }
 }
 
 .buttons_how {
@@ -188,6 +201,12 @@ header .nav a:hover {
     background-color: rgb(247, 179, 11);
     cursor: pointer;
 }
+@media (max-width: 290px) {
+    .buttons_how {
+        margin: 0;
+        width: 80%;
+    }
+}
 
 /* about */
 .about {
@@ -198,6 +217,7 @@ header .nav a:hover {
     padding: 120px 0 60px 0;
     
 }
+
 @media (min-width: 60px) {
     .about {
         display: grid;
@@ -246,6 +266,7 @@ header .nav a:hover {
     margin-top: 30px;
 }
 
+
 /* how_it_works */
 
 /* how_it_title */
@@ -259,15 +280,20 @@ header .nav a:hover {
     font-family: 'Rubik', sans-serif;
     color: var(--about_title_p_color);
     font-weight: 500;
-    font-stretch: 100%;
+    
 }
 .how_it_title h2 {
     font-size: 48px;
     color: rgb(29, 31, 42);
     font-weight: 900;
-    font-stretch: 100%;
     font-family: 'Nunito Sans', sans-serif;
-    margin: 0 0 0 0;
+    margin: 0;
+    
+}
+@media (max-width: 260px) {
+    .how_it_title h2 {
+        font-size: 30px;
+    }
 }
 .how_it_title p {
    font-family: 'Rubik', sans-serif;
@@ -318,6 +344,11 @@ header .nav a:hover {
     font-size: 19px; 
     font-weight: 700;
 }
+@media (max-width: 220px) {
+    .text_how_it_work h3 {
+        font-size: 16px;
+    }
+}
 
 .text_how_it_work p {
     margin-left: -25px;
@@ -362,19 +393,19 @@ header .nav a:hover {
     font-family: 'Rubik', sans-serif;
     color: var(--about_title_p_color);
     font-weight: 500;
-    font-stretch: 100%;
+    
 }
 .pricing_title h2 {
     font-size: 34px;
     color: rgb(29, 31, 42);
     font-weight: 900;
-    font-stretch: 100%;
+    
     font-family: 'Nunito Sans', sans-serif;
     margin: 0 0 0 0;
 }
 
 .price_all {
-    display: block;
+    display: grid;
     box-sizing: border-box;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
@@ -414,7 +445,28 @@ header .nav a:hover {
     font-family: 'Rubik', sans-serif;
     color: var(--about_title_p_color);
     font-weight: 500;
-    font-stretch: 100%;
+    
+}
+.pricing_block {
+    display: flex;
+    align-items: flex-end;
+    vertical-align: baseline;
+    flex-wrap: wrap;
+    
+}
+.pricing_block2 {
+    font-size: 14px;
+    color: var(--about_title_p_color);
+    font-weight: 900;
+    font-family: 'Nunito Sans', sans-serif;
+    padding-bottom: 10px;
+}
+.pricing_block1 {
+    font-size: 41px;
+    color: var(--about_title_color);
+    font-weight: 900;
+    
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 .pricing_article li {
@@ -422,10 +474,15 @@ header .nav a:hover {
     font-family: 'Rubik', sans-serif;
     color: var(--about_title_p_color);
     font-weight: 400;
-    font-stretch: 100%;
+    
 }
 .pricing_article li::marker {
     color: var(--about_title_color);
+}
+@media (max-width: 220px) {
+    .pricing_article li {
+        font-size: 14px;
+    }
 }
 
 .buttons_get_started {
@@ -447,6 +504,11 @@ header .nav a:hover {
     cursor: pointer;
 }
 
+@media (max-width: 220px) {
+    .buttons_get_started {
+        width: auto;
+    }
+}
 
  
 /* Form JS______ */
@@ -459,26 +521,27 @@ header .nav a:hover {
     background-size: cover;
     padding-top: 90px;
     padding-bottom: 90px;
-   
+    
 }
 
 .contacts_title {
     display: flex;
     flex-direction: column;
     text-align: center;
+    padding-top: 20px;
 }
 .contacts_title h3 {
     font-size: 12px;
     font-family: 'Rubik', sans-serif;
     color: var(--about_title_p_color);
     font-weight: 500;
-    font-stretch: 100%;
+    
 }
 .contacts_title h2 {
     font-size: 34px;
     color: var(--intro_color);
     font-weight: 900;
-    font-stretch: 100%;
+    
     font-family: 'Nunito Sans', sans-serif;
     margin: 0 0 0 0;
     padding-left: 15px;
@@ -494,14 +557,10 @@ header .nav a:hover {
 
 .container {
   display: block;
- 
-  margin-right: auto;
-  min-width: 250px;
-    
+  margin-right: auto;   
   max-width: 570px;
   height: 621px;
   width: auto;
-  min-width: 300px;
   background: rgba(255, 255, 255, 0.05);
     
 }
@@ -509,9 +568,10 @@ header .nav a:hover {
 
 
 .form {
-  padding: 30px 40px;
-  min-width: 250px;
+  
+   
 }
+
 
 .form-control {
   margin-bottom: 10px;
@@ -521,15 +581,16 @@ header .nav a:hover {
 
 
 .form-control input {
-  
-  
+ 
   display: block;
-  width: 100%;
+  width: 80%;
   padding: 10px;
   font-size: 14px;
   background-color: rgba(255, 255, 255, 0.08);
   border-radius: 5px;
-  
+  margin: auto;
+  margin-top: 30px;
+  color: white;
 }
 
 .form-control input:focus {
@@ -558,13 +619,11 @@ header .nav a:hover {
   visibility: visible;
 }
 
-.form button {
+.container button {
   cursor: pointer;
   font-family: 'Rubik', sans-serif;
   background-image: linear-gradient(to left, rgb(231,119,199) 0%, rgb(145,142,232) 51%, rgb(124,73,248) 100%);
-  background-image: transparent;
   transition: 0.3s;
-
   border-radius: 5px;
   border-width: 0;
   color: #fff;
@@ -572,14 +631,14 @@ header .nav a:hover {
   justify-content: center;
   font-size: 16px;
   padding: 10px;
-  margin-top: 20px;
-  width: 100%;
+  width: 85%;
+  margin: auto;
+  margin-top: 30px;
 }
 
 .form button:hover {
    background-image: linear-gradient(to right, rgb(231,119,199) 0%, rgb(145,142,232) 51%, rgb(124,73,248) 100%);
 }
-
 
 /* Footer */
 
@@ -595,6 +654,7 @@ header .nav a:hover {
     .footer {
         display: grid;
         grid-template-columns: 1fr;  
+        width: 80%;
     }
 }
 
@@ -608,6 +668,11 @@ header .nav a:hover {
     width: 204px;
     margin-top: 20px;
     margin-bottom: 10px;
+}
+@media (max-width: 290px) {
+    .logo_footer {
+        width: 80%!important;
+    }
 }
 .img_nav_footer {
     height: 30px;
