@@ -60,7 +60,7 @@ header .nav {
     flex-direction: column;
 }
 header .img_nav {
-    height: 20px;
+    height: 28px;
     width: auto;
 
 }
@@ -565,12 +565,6 @@ header .nav a:hover {
     
 }
 
-
-
-.form {
-  
-   
-}
 
 
 .form-control {
