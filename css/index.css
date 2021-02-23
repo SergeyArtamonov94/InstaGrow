@@ -559,7 +559,7 @@ header .nav a:hover {
   display: block;
   margin-right: auto;   
   max-width: 570px;
-  height: 621px;
+  padding-bottom: 50px;
   width: auto;
   background: rgba(255, 255, 255, 0.05);
     
@@ -600,6 +600,7 @@ header .nav a:hover {
 
 .form-control.success input {
   border-color: var(--success-color);
+  
 }
 
 .form-control.error input {
@@ -611,7 +612,7 @@ header .nav a:hover {
   color:wheat;
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: 50px;
   visibility: hidden;
 }
 
