@@ -26,6 +26,7 @@ body {
 .logo {
     height: auto;
     width: 204px;
+    z-index: 50;
 }
 @media (max-width: 290px) {
     .logo {
@@ -36,11 +37,14 @@ body {
 /* Header Nav */
 .burger-icon {
     font-size: 3rem;
+    z-index: 5;
+    color: grey;
 }
 
 #burger-checkbox {
     display: none; 
 }
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -50,20 +54,56 @@ body {
 }
 header .nav {
     display: none;  
-    
+   
 }
 header input:checked ~ .nav {
     display: flex;
+ 
+} 
+@media (max-width: 610px) {
+    header input:checked ~ .nav {
+        display: flex;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        width: 100%;
+        background-color: white;
+        margin: 0;
+        text-align: center;
+        top: 100px;
+        box-sizing: content-box;
+    }
+    .img_nav_burger {
+        margin-top: 40px;
+    
+    } 
+
+    nav span {
+        margin-top: 20px;
+    }
+
 }
+
 
 header .nav {
     flex-direction: column;
+    
 }
 header .img_nav {
     height: 28px;
     width: auto;
-
+    border-radius: 25%;
+    transition: border-radius 0.2s linear ;
+    background-color: violet;
 }
+header .img_nav:hover {
+    border-radius: 50%;
+    opacity: 0.8;
+    
+    
+}
+
 header .nav a {
     font-size: 12px;
     text-decoration: none;
@@ -78,6 +118,7 @@ header .nav a {
 header .nav a:hover {
     color: violet;
 }
+
 @media (min-width: 610px) {
     .header {
     display: flex;
@@ -103,6 +144,10 @@ header .nav a:hover {
         justify-content: space-around;
         flex: 0.4;    
     }
+    .img_nav_burger {
+        display: flex;
+    }
+    
 }
 
 /* Main */
@@ -405,36 +450,19 @@ header .nav a:hover {
 }
 
 .price_all {
-    display: grid;
-    box-sizing: border-box;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     text-align: left;
-    
-    
-}
-@media (min-width: 60px) {
-    .price_all {
-        display: grid;
-        grid-template-columns: 1fr;  
-    }
-}
-@media (min-width: 760px) {
-    .price_all {
-        display: grid;
-        grid-template-columns: 1fr 1fr;  
+    width: 100%!important;
         
-    }
 }
-@media (min-width: 960px) {
-    .price_all  {
-        grid-template-columns: 1fr 1fr 1fr;  
-    }
-}
+
 .pricing_article {
     background-color: white;
     margin: 50px 10px 0 10px;
     padding-left: 20px;
+    padding-right: 20px;
     
 }
 .pricing_article ul {
