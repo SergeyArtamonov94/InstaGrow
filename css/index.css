@@ -685,6 +685,7 @@ header .nav a:hover {
     .footer  {
         grid-template-columns: 1fr 1fr 1fr 1fr;  
     }
+    
 }
 .logo_footer {
     height: auto;
@@ -697,9 +698,17 @@ header .nav a:hover {
         width: 80%!important;
     }
 }
+
 .img_nav_footer {
-    height: 30px;
+    height: 28px;
     width: auto;
+    border-radius: 25%;
+    transition: border-radius 0.2s linear ;
+    background-color: violet;
+}
+.img_nav_footer:hover {
+    border-radius: 50%;
+    opacity: 0.8;   
 }
 
 .footer_home span {
@@ -712,7 +721,15 @@ header .nav a:hover {
     text-align: center;
     justify-content: center;
     margin: 10px;
+    margin: 0;
 }
+@media (min-width: 800px) {
+    .footer_home span {
+        text-align: left;
+        
+    }
+}
+
 .footer h2 {
     font-family: 'Nunito Sans', sans-serif;
     color: var(--about_title_color);
@@ -761,6 +778,7 @@ header .nav a:hover {
     text-align: center;
     justify-content: center;
 }
+
 .footer_visit a {
     padding: 15px;
 }
@@ -768,3 +786,5 @@ header .nav a:hover {
 .footer_visit_icon {
     margin: 15px;
 }
+
+

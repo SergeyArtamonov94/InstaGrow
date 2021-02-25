@@ -1,10 +1,5 @@
 
 
-
-
-
-
-
 const form = document.getElementById('form');
 const username = document.getElementById('username');
 const email = document.getElementById('email');
@@ -81,13 +76,12 @@ function getFieldName(input) {
 
 // Event listeners
 form.addEventListener('submit', function(e) {
-  e.preventDefault();
-
+    e.preventDefault();
   if(!checkRequired([username, email, name])){
     checkLength(username, 3, 15);
     checkLength(name, 0, 25);
     checkEmail(email);
-   
-  }
+   }
 
 });
+
