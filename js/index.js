@@ -1,5 +1,3 @@
-
-
 const form = document.getElementById('form');
 const username = document.getElementById('username');
 const email = document.getElementById('email');
@@ -62,12 +60,6 @@ function checkLength(input, min, max) {
   }
 }
 
-// // Check passwords match
-// function checkPasswordsMatch(input1, input2) {
-//   if (input1.value !== input2.value) {
-//     showError(input2, 'Passwords do not match');
-//   }
-// }
 
 // Get fieldname
 function getFieldName(input) {
@@ -77,7 +69,7 @@ function getFieldName(input) {
 // Event listeners
 form.addEventListener('submit', function(e) {
     e.preventDefault();
-  if(!checkRequired([username, email, name])){
+    if(!checkRequired([username, email, name])){
     checkLength(username, 3, 15);
     checkLength(name, 0, 25);
     checkEmail(email);
