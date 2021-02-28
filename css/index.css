@@ -788,3 +788,29 @@ header .nav a:hover {
 }
 
 
+.back_to_top {
+  font-size: 30px;
+  font-weight: 700;
+  position: fixed;
+  bottom: 80px;
+  right: 40px;
+  z-index: 9999;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  background: violet;
+  color: rgb(247, 179, 11);
+  cursor: pointer;
+  border-radius: 10px;
+  display: none;
+}
+
+.back_to_top:hover {
+    background: rgb(247, 179, 11);
+    color: violet;
+}
+
+.back_to_top-show {
+  display: block;
+}
