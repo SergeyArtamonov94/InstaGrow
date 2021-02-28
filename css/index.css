@@ -809,6 +809,7 @@ header .nav a:hover {
 .back_to_top:hover {
     background: rgb(247, 179, 11);
     color: violet;
+    border-radius: 10px;
 }
 
 .back_to_top-show {
